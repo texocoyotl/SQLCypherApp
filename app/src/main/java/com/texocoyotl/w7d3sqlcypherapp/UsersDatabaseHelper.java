@@ -9,10 +9,10 @@ import net.sqlcipher.database.SQLiteOpenHelper;
 public class UsersDatabaseHelper extends SQLiteOpenHelper{
 
 
-    private static final String TABLE = "players";
-    private static final String COLUMN_ID = "_ID";
-    private static final String COLUMN_NAME = "name";
-    private static final String COLUMN_RANK = "rank";
+    public static final String TABLE = "players";
+    public static final String COLUMN_ID = "_ID";
+    public static final String COLUMN_NAME = "name";
+    public static final String COLUMN_RANK = "rank";
 
     public UsersDatabaseHelper(Context context) {
         super(context, "test.db", null, 1);
